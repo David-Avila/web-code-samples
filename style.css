@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css?1">
+</head>
+<body>
+    <header>
+        <h1>Code Samples</h1>
+    </header>
+
+    <section>
+
+<!--------------------------------------------------------->
+
+        <div class="SampleDiv">
+            <h3>Hover Transition</h3>
+            <button class="hoverTransition">Hover Me</button>
+
+            <h4>index.html</h4>
+            <span class="code">
+                <pre>&lt;button class="btn" &gt;Hover Me&lt;/button&gt;</pre>
+            </span>
+
+            <h4>style.css:</h4>
+            <span class="code">
+                <pre>
+.btn{
+    color: whitesmoke;
+    text-align: center;
+    position: relative;
+    align-self: center;
+    width: 80px;
+    height: 48px;
+    border-width: 3px;
+    font-weight: bolder;
+    border-radius: 15px;
+    margin-bottom: 10px;
+
+    transform: translateY(0%);
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.4);
+    background-color: rgb(48, 48, 90);
+    border-color: slateblue;
+    transition: all 1s;
+}
+
+.btn:hover{
+    border-width: 3px;
+    border-color: rgb(48, 48, 90);
+    background-color: slateblue;
+    transform: translateY(-5px);
+}
+                </pre>
+            </span>
+        </div>
+
+<!--------------------------------------------------------->
+
+        <div class="SampleDiv">
+            <h3>Focus Transition</h3>
+            <h4>Press Tab or Shift + Tab</h4>
+            <span>
+                <button class="focusTransition">Button 1</button>
+                <button class="focusTransition">Button 2</button>
+                <button class="focusTransition">Button 3</button>
+            </span>
+            <h4>index.html</h4>
+            <span class="code">
+                <pre>&lt;button class="btn" &gt;Button 1&lt;/button&gt;
+&lt;button class="btn" &gt;Button 2&lt;/button&gt;
+&lt;button class="btn" &gt;Button 3&lt;/button&gt;</pre>
+            </span>
+
+            <h4>style.css:</h4>
+            <span class="code">
+                <pre>
+.btn{
+    color: whitesmoke;
+    text-align: center;
+    position: relative;
+    align-self: center;
+    width: 80px;
+    height: 48px;
+    border-width: 3px;
+    font-weight: bolder;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.4);
+
+    
+    transform: translateY(0%);
+    background-color: rgb(48, 48, 90);
+    border-color: slateblue;
+    transition: all 1s;
+}
+
+.btn:focus{
+    transform: translateY(-5px);   
+    background-color: slateblue;
+    border-color: rgb(48, 48, 90);
+}
+                </pre>
+            </span>
+        </div>
+
+<!--------------------------------------------------------->
+
+    </section>
+
+</body>
+</html>
