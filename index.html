@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Samples</title>
-    <link rel="stylesheet" href="style.css?2">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
         <h1>Code Samples</h1>
+        <div class="contact">
+            <button class="social" onclick="GoToGitHub()"><img src="github.png" alt="Github"></button>
+        </div>
     </header>
 
     <section>
@@ -16,8 +20,10 @@
 <!--------------------------------------------------------->
 
         <div class="SampleDiv">
-            <h3>Hover Transition</h3>
-            <button class="hoverTransition">Hover Me</button>
+            <div class="sampleHeader">
+                <h3>Hover Transition</h3>
+                <button class="btnHoverTran">Hover Me</button>
+            </div>
 
             <h4>index.html</h4>
             <span class="code">
@@ -59,13 +65,16 @@
 <!--------------------------------------------------------->
 
         <div class="SampleDiv">
-            <h3>Focus Transition</h3>
-            <h4>Press Tab or Shift + Tab</h4>
-            <span>
-                <button class="focusTransition">Button 1</button>
-                <button class="focusTransition">Button 2</button>
-                <button class="focusTransition">Button 3</button>
-            </span>
+            <div class="sampleHeader">
+                <h3>Focus Transition</h3>
+                <h4>Press Tab or Shift + Tab</h4>
+                <span>
+                    <button class="btnFocusTran">Button 1</button>
+                    <button class="btnFocusTran">Button 2</button>
+                    <button class="btnFocusTran">Button 3</button>
+                </span>
+            </div>
+
             <h4>index.html</h4>
             <span class="code">
                 <pre>&lt;button class="btn" &gt;Button 1&lt;/button&gt;
