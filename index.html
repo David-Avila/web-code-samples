@@ -18,10 +18,67 @@
     <section>
 
 <!--------------------------------------------------------->
+<div class="SampleDiv">
+    <div class="sampleHeader">
+        <h3>Loading Animation</h3>
+        <h4>Using keyframes to make a <br>cool animation</h4>
+        <span>
+            <div class="loadingAnim"></div>
+            <div class="loadingAnim2"></div>
+        </span>
+    </div>
 
+    <h4>index.html</h4>
+    <span class="code">
+        <pre>&lt;div class="loadingAnim"&gt;&lt;/div&gt;
+&lt;div class="loadingAnim2"&gt;&lt;/div&gt;</pre>
+    </span>
+
+    <h4>style.css:</h4>
+    <span class="code">
+        <pre>
+@keyframes loadingAnimation {
+    0% {
+        width: 0px;
+        transform: translateX(-60px);
+        border-color: blueviolet;
+    }
+    50% {
+        width: 30px;
+    }
+    100%{
+        width: 0px;
+        transform: translateX(60px);
+        border-color: violet;
+    }
+}
+
+.loadingAnim,
+.loadingAnim2
+{
+    width: 0px;
+    height: 0px;
+    border: 16px solid blueviolet;
+    border-radius: 25px;
+
+    animation-name: loadingAnimation;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.loadingAnim2{
+    animation-direction: alternate-reverse;
+}
+        </pre>
+    </span>
+</div>
+<!--------------------------------------------------------->
         <div class="SampleDiv">
             <div class="sampleHeader">
                 <h3>Hover Transition</h3>
+                <h4>Put the mouse on top of the button</h4>
                 <button class="btnHoverTran">Hover Me</button>
             </div>
 

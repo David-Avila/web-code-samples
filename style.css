@@ -1,6 +1,11 @@
 
 *{
     color: antiquewhite;
+    
+}
+
+:root{
+    --mainColor : #30305a;
 }
 
 body{
@@ -31,6 +36,10 @@ img{
     height: 48px;
     transform: translateY(1px);
     border-radius: 25px;
+}
+
+h4{
+    text-align: center;
 }
 
 .SampleDiv{
@@ -83,14 +92,14 @@ img{
 
     transform: translateY(0%);
     box-shadow: 5px 5px rgba(0, 0, 0, 0.4);
-    background-color: rgb(48, 48, 90);
+    background-color: var(--mainColor);
     border-color: slateblue;
     transition: all 1s;
 }
 
 .btnHoverTran:hover{
     border-width: 3px;
-    border-color: rgb(48, 48, 90);
+    border-color: var(--mainColor);
     background-color: slateblue;
     transform: translateY(-5px);
 }
@@ -110,7 +119,7 @@ img{
 
     
     transform: translateY(0%);
-    background-color: rgb(48, 48, 90);
+    background-color: var(--mainColor);
     border-color: slateblue;
     transition: all 1s;
 }
@@ -118,5 +127,41 @@ img{
 .btnFocusTran:focus{
     transform: translateY(-5px);   
     background-color: slateblue;
-    border-color: rgb(48, 48, 90);
+    border-color: var(--mainColor);
+}
+
+
+@keyframes loadingAnimation {
+    0% {
+        width: 0px;
+        transform: translateX(-60px);
+        border-color: blueviolet;
+    }
+    50% {
+        width: 30px;
+    }
+    100%{
+        width: 0px;
+        transform: translateX(60px);
+        border-color: violet;
+    }
+}
+
+.loadingAnim,
+.loadingAnim2
+{
+    width: 0px;
+    height: 0px;
+    border: 16px solid blueviolet;
+    border-radius: 25px;
+
+    animation-name: loadingAnimation;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.loadingAnim2{
+    animation-direction: alternate-reverse;
 }
