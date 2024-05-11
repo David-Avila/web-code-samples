@@ -32,9 +32,9 @@ section{
 }
 
 img{
-    width: 48px;
-    height: 48px;
-    transform: translateY(1px);
+    width: 40px;
+    height: 40px;
+    transform: translateY(2px);
     border-radius: 25px;
 }
 
@@ -54,6 +54,18 @@ h4{
     height: 80vh;
 }
 
+.hidden{
+    opacity: 0;
+    transform: translateX(-50px);
+
+    transition: all 1s ease;
+}
+
+.show{
+    opacity: 1;
+    transform: translateX(0px)
+}
+
 .sampleHeader{
     display: flex;
     flex-flow: column nowrap;
@@ -62,9 +74,14 @@ h4{
 }
 
 .social{
-    border-color: transparent;
-    border-radius: 25px;
-    background-color: rgb(18, 18, 24);
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: white;
+    transition: all 0.5s ease;
+}
+
+.social:hover{
+    border-radius: 25%;
 }
 
 .code{
