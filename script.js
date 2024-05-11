@@ -3,5 +3,5 @@ function GoToGitHub(){
 }
 
 function GoToLinkedIn(){
-    window.open("www.linkedin.com/in/david-avila-duran-12568a222", "_blank");
+    window.open("https://www.linkedin.com/in/david-avila-duran-12568a222", "_blank");
 }
